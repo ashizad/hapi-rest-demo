@@ -19,7 +19,7 @@ module.exports = function() {
 			database : dbContants[env]['database']
 		},
 		server : {
-			defaultHost : 'http://localhost:3000'
+			defaultHost : 'http://localhost:8080'
 		}
 	};
 
@@ -54,9 +54,9 @@ module.exports = function() {
 				'database' : 'dellstore2'
 			},
 			'development' : {
-				'host' : 'dellstore2.cgffdp2lclff.us-west-2.rds.amazonaws.com',
-				'user' : 'spidertutorial',
-				'password' : 'spidertutorial',
+				'host' : 'continuesdeployment.chkveepfyd9e.ap-southeast-2.rds.amazonaws.com',
+				'user' : 'ashkan',
+				'password' : 'Password1',
 				'database' : 'dellstore2'
 			}
 		};
@@ -71,9 +71,9 @@ module.exports = function() {
 				'port' : process.env.NODE_PORT
 			},
 			'development' : {
-				'url' : 'http://localhost:3000',
+				'url' : 'http://localhost:8080',
 				'host' : 'localhost',
-				'port' : '3000'
+				'port' : '8080'
 			}
 		};
 	}
