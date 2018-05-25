@@ -2,7 +2,7 @@
 
 result=$(curl --write-out '%{http_code}' -o /dev/null -m 10 -q -s http://localhost:8080/products/100)
 
-if [["$result" == "200"]]; then
+if [[$result == "200"]]; then
 	echo "Successfully pulled root page."
     exit 0
  fi
