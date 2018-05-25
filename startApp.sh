@@ -6,5 +6,5 @@ export DB_PRD_PASS=Password1
 export NODE_HOST=localhost
 export NODE_PORT=8080
 echo "Starting application ..."
-#node /myapp/index.js&
+node /myapp/index.js&
 exit 0
