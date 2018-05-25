@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /myapp
 permissions:
-  - object: /myapp/startApp.ss, /myapp/verify_service.sh
+  - object: /myapp/startApp.ss, /myapp/verify_service.sh, /myaoo/startNode.sh
     mode: 777
 hooks:
   ApplicationStart:
