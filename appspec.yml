@@ -10,3 +10,6 @@ hooks:
   ApplicationStart:
     - location: startApp.sh
       timeout: 10
+      #  ValidateService:
+          #    - location: verify_service.sh
+      #      runas: root
