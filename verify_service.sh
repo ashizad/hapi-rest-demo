@@ -1,8 +1,9 @@
 #!/bin/bash
 
 result=$(curl --write-out '%{http_code}' -o /dev/null -m 10 -q -s http://localhost:8080/products/100)
+httpStatus = "200"
 
-if [[$result == "200"]]; then
+if [[ "$result" == "$httpStatus" ]]; then
 	echo "Successfully pulled root page."
     exit 0
  fi
