@@ -19,6 +19,9 @@ server.start(function(err){
 
     if (err) {
         throw err;
+	process.exit(1);
     }
+
     console.log('Server  running at:', server.info.uri);
+	process.exit(0);
 });

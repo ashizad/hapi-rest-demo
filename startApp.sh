@@ -7,4 +7,4 @@ export NODE_HOST=localhost
 export NODE_PORT=8080
 echo "Starting application ..."
 node /myapp/index.js&
-process.exit(0)
+exit 0
