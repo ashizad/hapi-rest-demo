@@ -4,7 +4,7 @@ files:
   - source: /
     destination: /myapp
 permissions:
-  - object: /myapp/startApp.sh
+  - object: /myapp/startApp.sh, /myapp/verify_service.sh
     mode: 777
 hooks:
   ApplicationStart:
@@ -12,4 +12,5 @@ hooks:
       timeout: 10
   ValidateService:
     - location: verify_service.sh
-      runas: root
+     timeout: 10
+      
