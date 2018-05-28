@@ -19,11 +19,11 @@ module.exports = function () {
             method: 'GET',
             path: '/products',
             handler: productController.find
-        },
-	{
-		method:'GET',
-		path:'/products/category/{category}',
-		handler:productController.findByCategory
-	}
+        }//,
+	//{
+	//	method:'GET',
+	//	path:'/products/category/{category}',
+	//	handler:productController.findByCategory
+	//}
     ];
 }();
