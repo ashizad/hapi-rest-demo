@@ -22,7 +22,7 @@ module.exports = function () {
         },
 	{
 		method:'GET',
-		path:'/products/category/{category},
+		path:'/products/category/{category}',
 		handler:productController.findByCategory
 	}
     ];
